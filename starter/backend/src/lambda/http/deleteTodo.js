@@ -23,10 +23,6 @@ export const handler = middy()
     await deleteTodo(todoId, userId);
     return {
       statusCode: 204,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Credentials': true
-      },
       body: 'TODO item deleted'
     };
   })
